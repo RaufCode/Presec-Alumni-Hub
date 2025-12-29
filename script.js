@@ -6,7 +6,7 @@ const toggleMenu = () => {
     const isOpen = navigations.style.left === '0px';
 
     if (isOpen) {
-        navigations.style.left = '-200%';
+        navigations.style.left = '-300%';
         document.body.classList.remove('overflow-hidden');
     } else {
         navigations.style.left = '0';
