@@ -1,0 +1,390 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Tailwind CDN-->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!--Roboto font start-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--Roboto  font end-->
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="w-full z-[10000] bg-white/90">
+            <!--Destop Navigation-->
+            <nav
+                class="hidden p-4 max-w-7xl mx-auto lg:flex items-center justify-between"
+            >
+                <figure class="h-9 w-9">
+                    <img
+                        src="/images/Presec_logo.webp"
+                        alt=""
+                        class="h-full w-full object-cover"
+                    />
+                </figure>
+                <div class="flex items-center justify-between font-medium">
+                    <a
+                        href=""
+                        class="block py-1.5 px-4 transition-all duration-200 hover:bg-blue-100"
+                        >Home</a
+                    >
+                    <a
+                        href=""
+                        class="block py-1.5 px-4 transition-all duration-200 hover:bg-blue-100"
+                        >Directory</a
+                    >
+                    <a
+                        href=""
+                        class="block py-1.5 px-4 transition-all duration-200 hover:bg-blue-100"
+                        >Events</a
+                    >
+                    <a
+                        href=""
+                        class="block py-1.5 px-4 transition-all duration-200 hover:bg-blue-100"
+                        >News</a
+                    >
+                </div>
+                <div class="flex items-center">
+                    <a
+                        href=""
+                        class="block py-1.5 px-4 transition-all duration-200 hover:bg-blue-100 text-blue-600"
+                        >Login</a
+                    >
+                    <a
+                        href=""
+                        class="block py-2 px-4 bg-blue-900 hover:bg-blue-800 duration-200 transition-all rounded text-white"
+                        >Register</a
+                    >
+                </div>
+            </nav>
+            <!--Mobile Navigation-->
+            <div class="relative lg:hidden">
+                <div
+                    class="flex items-center justify-between p-4 border-b border-gray-300"
+                >
+                    <div class="flex items-center gap-2">
+                        <figure class="h-9 w-9">
+                            <img
+                                src="/images/Presec_logo.webp"
+                                alt=""
+                                class="h-full w-full object-cover"
+                            />
+                        </figure>
+                        <h1 class="text-2xl font-bold">Odadee '99</h1>
+                    </div>
+                    <button class="toggler text-gray-900">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 h-8"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                        >
+                            <path d="M4 7H7M11 7H20" />
+                            <path d="M4 12H7M7 12H20" />
+                            <path d="M4 17H13M17 17H20" />
+                        </svg>
+                    </button>
+                </div>
+                <nav
+                    id="navigations"
+                    class="lg:hidden fixed top-0 -left-full w-full h-max py-4 flex flex-col gap-1 bg-white border-b border-gray-300 transition-all duration-200 z-[9999]"
+                >
+                    <button
+                        class="toggler text-blue-900 flex justify-end absolute right-4"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 h-8"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+                                    fill="#000000"
+                                ></path>
+                            </g>
+                        </svg>
+                    </button>
+
+                    <a
+                        href=""
+                        class="w-full rounded-md px-4 py-2 transition hover:bg-gray-100"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href=""
+                        class="w-full rounded-md px-4 py-2 transition hover:bg-gray-100"
+                    >
+                        Directory
+                    </a>
+
+                    <a
+                        href=""
+                        class="w-full rounded-md px-4 py-2 transition hover:bg-gray-100"
+                    >
+                        Events
+                    </a>
+
+                    <a
+                        href=""
+                        class="w-full rounded-md px-4 py-2 transition hover:bg-gray-100"
+                    >
+                        News
+                    </a>
+
+                    <div class="mt-3 px-4">
+                        <a
+                            href=""
+                            class="w-full block rounded-md px-4 py-2 text-center text-blue-600"
+                        >
+                            Login
+                        </a>
+
+                        <a
+                            href=""
+                            class="w-full block rounded-md bg-blue-600 px-4 py-2 text-center text-white"
+                        >
+                            Register
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--Welcome Hero-->
+            <section class="flex items-center justify-center h-[95vh]">
+                <div class="relative w-full overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        id="hero-bg"
+                        class="absolute inset-0 bg-cover transition-opacity duration-700 transition-all duration-200"
+                    ></div>
+
+                    <!-- Blue Gradient Overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-gray-900/75 to-gray-900/85"
+                    ></div>
+
+                    <!-- Optional Content on top -->
+                    <div
+                        class="relative z-10 flex items-center justify-center h-full text-white text-center"
+                    >
+                        <div>
+                            <h1 class="font-bold">OFFICIAL ALUMNI NETWORK</h1>
+                            <div
+                                class="text-4xl md:text-6xl font-semibold mt-7"
+                            >
+                                <h1>Welcome Home</h1>
+                                <h1>Odaddee '99</h1>
+                            </div>
+                            <p class="max-w-3xl text-xl mt-7">
+                                The official digital directory for the 1999 Year
+                                Group. Reconnect with old friends, expand your
+                                professional network, and support our alma
+                                malta.
+                            </p>
+                            <div
+                                class="flex flex-col md:flex-row gap-5 w-max mx-auto mt-7"
+                            >
+                                <button
+                                    class="px-6 py-3 bg-white text-blue-900 flex items-center gap-2 rounded border border-white cursor-pointer"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6 block"
+                                    >
+                                        <g
+                                            id="SVGRepo_bgCarrier"
+                                            stroke-width="0"
+                                        ></g>
+                                        <g
+                                            id="SVGRepo_tracerCarrier"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M20 18L14 18M17 15V21M4 21C4 17.134 7.13401 14 11 14C11.695 14 12.3663 14.1013 13 14.2899M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </g>
+                                    </svg>
+                                    Join the directory
+                                </button>
+                                <button
+                                    class="px-6 py-3 bg-transparent text-white border border-white text-blue-900 rounded cursor-pointer"
+                                >
+                                    Explore Events
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="flex items-center justify-center min-h-screen pb-10 lg:pb-0 px-4"
+            >
+                <div class="text-center max-w-7xl mx-auto">
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-[64px] font-semibold mt-7"
+                    >
+                        Reconnect, Reflect & Mentor
+                    </h1>
+                    <p class="text-xl mt-7">
+                        Our platform is purposefully built to bring us together,
+                        strengthen meaningful connections, and foster personal,
+                        professional, and collective growth across our alumni
+                        community.
+                    </p>
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 md:w-2/4 lg:w-full mx-auto"
+                    >
+                        <div
+                            class="text-left p-10 bg-blue-50 cursor-pointer rounded-md hover:shadow-md shadow-gray-400"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-12 h-12"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <circle
+                                        cx="9.00098"
+                                        cy="6"
+                                        r="4"
+                                        fill="#1C274C"
+                                    ></circle>
+                                    <ellipse
+                                        cx="9.00098"
+                                        cy="17.001"
+                                        rx="7"
+                                        ry="4"
+                                        fill="#1C274C"
+                                    ></ellipse>
+                                    <path
+                                        d="M20.9996 17.0005C20.9996 18.6573 18.9641 20.0004 16.4788 20.0004C17.211 19.2001 17.7145 18.1955 17.7145 17.0018C17.7145 15.8068 17.2098 14.8013 16.4762 14.0005C18.9615 14.0005 20.9996 15.3436 20.9996 17.0005Z"
+                                        fill="#1C274C"
+                                    ></path>
+                                    <path
+                                        d="M17.9996 6.00073C17.9996 7.65759 16.6565 9.00073 14.9996 9.00073C14.6383 9.00073 14.292 8.93687 13.9712 8.81981C14.4443 7.98772 14.7145 7.02522 14.7145 5.99962C14.7145 4.97477 14.4447 4.01294 13.9722 3.18127C14.2927 3.06446 14.6387 3.00073 14.9996 3.00073C16.6565 3.00073 17.9996 4.34388 17.9996 6.00073Z"
+                                        fill="#1C274C"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <h3 class="text-2xl font-semibold mt-3">
+                                Reconnect
+                            </h3>
+                            <p class="mt-3">
+                                Find old friends and catch up on the past two
+                                decades. Discover where life has taken your
+                                classmates and rekindle those connections.
+                            </p>
+                        </div>
+                        <div
+                            class="text-left p-10 bg-blue-50 cursor-pointer rounded-md hover:shadow-md shadow-gray-400"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-12 h-12"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M14 10C14 9.44771 13.5523 9 13 9H12.5C9.46243 9 7 11.4624 7 14.5C7 17.5376 9.46243 20 12.5 20H17.5C20.5376 20 23 17.5376 23 14.5C23 12.0091 21.3441 9.90488 19.073 9.22823C18.5098 9.06042 18 9.52887 18 10.1166V10.1683C18 10.6659 18.3745 11.0735 18.8345 11.2634C20.1055 11.788 21 13.0395 21 14.5C21 16.433 19.433 18 17.5 18H12.5C10.567 18 9 16.433 9 14.5C9 12.567 10.567 11 12.5 11H13C13.5523 11 14 10.5523 14 10Z"
+                                        fill="#0F0F0F"
+                                    ></path>
+                                    <path
+                                        d="M11.5 4C14.5376 4 17 6.46243 17 9.5C17 12.5376 14.5376 15 11.5 15H11C10.4477 15 10 14.5523 10 14C10 13.4477 10.4477 13 11 13H11.5C13.433 13 15 11.433 15 9.5C15 7.567 13.433 6 11.5 6H6.5C4.567 6 3 7.567 3 9.5C3 10.9605 3.89451 12.212 5.16553 12.7366C5.62548 12.9264 6 13.3341 6 13.8317V13.8834C6 14.4711 5.49024 14.9396 4.92699 14.7718C2.65592 14.0951 1 11.9909 1 9.5C1 6.46243 3.46243 4 6.5 4H11.5Z"
+                                        fill="#0F0F0F"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <h3 class="text-2xl font-semibold mt-3">Network</h3>
+                            <p class="mt-3">
+                                Reconnect with classmates, expand your
+                                connections, and discover new opportunities.
+                                Share ideas, collaborate, and get guidance to
+                                grow personally and professionally within the
+                                Odadee ’99 community.
+                            </p>
+                        </div>
+                        <div
+                            class="text-left p-10 bg-blue-50 cursor-pointer rounded-md hover:shadow-md shadow-gray-400"
+                        >
+                            <svg
+                                fill="#000000"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-12 h-12"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <h3 class="text-2xl font-semibold mt-3">
+                                Give Back
+                            </h3>
+                            <p class="mt-3">
+                                Support your community by sharing your
+                                knowledge, mentoring younger alumni, and
+                                contributing to initiatives that make a
+                                difference. Every contribution helps strengthen
+                                the Odadee ’99 network and empowers the next
+                                generation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
