@@ -20,14 +20,14 @@
             <!--Search Bar-->
             <div class="w-full bg-blue-950 mx-auto">
                 <div class="max-w-7xl mx-auto px-4 py-2">
-                    <div
-                        class="text-gray-400 flex items-center justify-end gap-2"
-                    >
-                        <button class="flex items-center">
-                            search...
+                    <div class="flex items-center justify-end gap-4 text-white">
+                        <!-- Search Bar -->
+                        <div
+                            class="group flex items-center gap-2 backdrop-blur-sm rounded-full px-4 py-2.5 shadow-sm hover:shadow-md border border-gray-200 transition-all duration-300"
+                        >
                             <svg
                                 viewBox="0 0 24 24"
-                                class="w-6 h-6 text-gray-400"
+                                class="w-5 h-5 text-gray-500 flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -36,16 +36,23 @@
                                     cy="10.5"
                                     r="6.5"
                                     stroke="currentColor"
-                                    stroke-width="1.5"
+                                    stroke-width="2"
                                 />
                                 <path
                                     d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L15.3536 14.6464"
                                     stroke="currentColor"
-                                    stroke-width="1.5"
+                                    stroke-width="2"
                                     stroke-linecap="round"
                                 />
                             </svg>
-                        </button>
+                            <input
+                                type="text"
+                                placeholder="Search..."
+                                class="w-0 opacity-0 group-hover:w-64 group-hover:opacity-100 group-focus-within:w-64 group-focus-within:opacity-100 border-none outline-none bg-transparent text-white placeholder-gray-400 text-sm transition-all duration-300 px-2"
+                            />
+                        </div>
+
+                        <!-- Login Button -->
                         <a
                             href=""
                             class="block px-4 py-1.5 bg-black/20 rounded text-sm hover:text-gray-300"
@@ -1107,7 +1114,7 @@
                             class="block mx-auto w-full max-w-3xl bg-transparent border-b border-white/70 text-center text-white placeholder-white/70 p-3 focus:outline-none"
                         />
                         <button
-                            class="py-3 px-10 font-medium mt-7 bg-yellow-400"
+                            class="py-3 px-10 cursor-pointer font-medium mt-7 bg-yellow-400"
                         >
                             SUBSCRIBE
                         </button>
@@ -1118,11 +1125,13 @@
         <!--Footer-->
         <section class="bg-white w-full px-4 pt-16">
             <div
-                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 items-start"
+                class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 items-start text-center lg:text-left"
             >
                 <!-- Logo / Identity -->
-                <div class="flex items-start gap-4 text-blue-950">
-                    <figure class="h-14 w-14 shrink-0">
+                <div
+                    class="flex flex-col lg:flex-row items-center lg:items-start gap-4 text-blue-950"
+                >
+                    <figure class="h-14 w-14 shrink-0 mx-auto lg:mx-0">
                         <img
                             src="/images/Presec_logo.webp"
                             alt=""
@@ -1163,8 +1172,11 @@
                 </div>
 
                 <!-- Account -->
-                <div class="space-y-4">
+                <div
+                    class="space-y-4 flex flex-col items-center lg:items-start"
+                >
                     <h3 class="font-semibold text-blue-950">ACCOUNT</h3>
+
                     <div class="space-y-2 text-blue-950">
                         <a href="#" class="block hover:underline">PROFILE</a>
                         <a href="#" class="block hover:underline">STORIES</a>
@@ -1173,7 +1185,7 @@
                     </div>
 
                     <button
-                        class="mt-6 w-full md:w-max py-3 px-10 font-medium text-white bg-yellow-400 hover:bg-yellow-500 transition"
+                        class="mt-6 w-full sm:w-auto py-3 px-10 font-medium text-white bg-yellow-400 hover:bg-yellow-500 transition cursor-pointer"
                     >
                         ALUMNI ACCOUNTS
                     </button>
