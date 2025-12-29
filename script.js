@@ -1,5 +1,6 @@
-const navigations = document.querySelector('#navigations');
-const togglers = document.querySelectorAll('.toggler');
+const navigations = document.getElementById('navigations');
+const hamburgers = document.querySelectorAll('.hamburger');
+
 
 const toggleMenu = () => {
     const isOpen = navigations.style.left === '0px';
@@ -13,4 +14,34 @@ const toggleMenu = () => {
     }
 };
 
-togglers.forEach(btn => btn.addEventListener('click', toggleMenu));
+hamburgers.forEach(btn => btn.addEventListener('click', toggleMenu));
+
+const slidesContainer = document.getElementById('slides');
+const dots = document.querySelectorAll('.carousel-dot');
+let currentIndex = 0;
+
+function showSlide(index) {
+    currentIndex = index;
+    // slide the container
+    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+
+    // update dots
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-white', i === index);
+        dot.classList.toggle('bg-white/40', i !== index);
+        dot.classList.toggle('scale-125', i === index);
+    });
+}
+
+// dot click
+dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        showSlide(Number(dot.dataset.index));
+    });
+});
+
+// Optional: auto-slide every 5s
+setInterval(() => {
+    const next = (currentIndex + 1) % dots.length;
+    showSlide(next);
+}, 5000);
