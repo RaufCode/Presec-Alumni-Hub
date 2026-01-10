@@ -8,7 +8,8 @@ const toggleMenu = () => {
     if (isOpen) {
         navigations.style.left = '-300%';
         document.body.classList.remove('overflow-hidden');
-    } else {
+    } else {I want you to design a perfect about page for this and use tailwind classes cdn
+    
         navigations.style.left = '0';
         document.body.classList.add('overflow-hidden');
     }
