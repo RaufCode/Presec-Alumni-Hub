@@ -3,177 +3,93 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>News & Updates</title>
-
-        <!-- Tailwind CSS CDN -->
+        <title>Latest News</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-
-    <body class="bg-gray-50 text-gray-900">
-        <!-- Header -->
-        <header class="bg-white border-b border-gray-200">
-            <div
-                class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between"
-            >
-                <h1 class="text-xl font-semibold">Initiative Name</h1>
-
-                <nav class="hidden md:flex space-x-8 text-sm font-medium">
-                    <a href="#" class="hover:text-gray-900">Home</a>
-                    <a href="#" class="hover:text-gray-900">About</a>
-                    <a href="#" class="text-gray-900">News</a>
-                    <a href="#" class="hover:text-gray-900">Contact</a>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Page Title -->
-        <section class="bg-white">
-            <div class="max-w-7xl mx-auto px-6 py-16">
-                <h2 class="text-4xl font-bold mb-4">News & Updates</h2>
-                <p class="max-w-2xl text-gray-600 leading-relaxed">
-                    Official announcements, progress reports, and public
-                    communications from the initiative.
+    <body class="bg-gray-50 text-gray-800">
+        <!-- Page Container -->
+        <div class="max-w-5xl mx-auto px-4 py-10">
+            <!-- Header -->
+            <header class="mb-10 text-center">
+                <h1 class="text-3xl font-bold tracking-tight">Latest News</h1>
+                <p class="mt-2 text-gray-600 text-sm">
+                    Updates, insights, and official announcements
                 </p>
-            </div>
-        </section>
+            </header>
 
-        <!-- Featured Story -->
-        <section class="max-w-7xl mx-auto px-6 py-16">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Image Placeholder -->
-                <div class="w-full h-72 bg-gray-200 rounded-lg"></div>
-
-                <!-- Content -->
-                <div>
-                    <span
-                        class="inline-block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3"
-                    >
-                        Featured
-                    </span>
-
-                    <h3 class="text-3xl font-semibold mb-4 leading-tight">
-                        Major Reform Milestone Achieved in Phase Two Rollout
-                    </h3>
-
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        The initiative has reached a significant milestone
-                        following the completion of phase two activities,
-                        marking measurable progress in implementation and
-                        oversight.
-                    </p>
-
-                    <div class="flex items-center text-sm text-gray-500">
-                        <span>12 January 2026</span>
-                        <span class="mx-3">•</span>
-                        <span>Official Statement</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News Grid -->
-        <section class="bg-white">
-            <div class="max-w-7xl mx-auto px-6 py-20">
-                <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"
+            <!-- News List -->
+            <section class="space-y-8">
+                <!-- News Item -->
+                <article
+                    class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition"
                 >
-                    <!-- News Card -->
-                    <article>
-                        <div
-                            class="w-full h-44 bg-gray-200 rounded-md mb-4"
-                        ></div>
-
+                    <div class="flex items-center justify-between mb-2">
                         <span
-                            class="text-xs uppercase tracking-wide text-gray-500"
+                            class="text-xs font-medium text-blue-600 uppercase"
                         >
-                            Update
+                            Policy
                         </span>
+                        <time class="text-xs text-gray-500"> 12 Jan 2026 </time>
+                    </div>
+                    <h2 class="text-lg font-semibold leading-snug mb-2">
+                        Government Announces New Urban Renewal Initiative
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        The Presidential Taskforce has unveiled a nationwide
+                        urban renewal plan aimed at improving infrastructure,
+                        sanitation, and public transport.
+                    </p>
+                </article>
 
-                        <h4 class="mt-2 font-semibold text-lg leading-snug">
-                            Stakeholder Consultations Begin Nationwide
-                        </h4>
-
-                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                            Engagement sessions are underway to align
-                            institutions and community representatives.
-                        </p>
-
-                        <div class="mt-4 text-xs text-gray-500">
-                            8 January 2026
-                        </div>
-                    </article>
-
-                    <!-- News Card -->
-                    <article>
-                        <div
-                            class="w-full h-44 bg-gray-200 rounded-md mb-4"
-                        ></div>
-
+                <!-- News Item -->
+                <article
+                    class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition"
+                >
+                    <div class="flex items-center justify-between mb-2">
                         <span
-                            class="text-xs uppercase tracking-wide text-gray-500"
+                            class="text-xs font-medium text-green-600 uppercase"
                         >
-                            Announcement
+                            Economy
                         </span>
+                        <time class="text-xs text-gray-500"> 10 Jan 2026 </time>
+                    </div>
+                    <h2 class="text-lg font-semibold leading-snug mb-2">
+                        Small Businesses to Receive Tax Relief Measures
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        New fiscal measures are expected to ease operational
+                        costs for SMEs and encourage local production across key
+                        sectors.
+                    </p>
+                </article>
 
-                        <h4 class="mt-2 font-semibold text-lg leading-snug">
-                            New Monitoring Framework Released to the Public
-                        </h4>
-
-                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                            A new performance tracking model has been published
-                            to improve transparency and reporting.
-                        </p>
-
-                        <div class="mt-4 text-xs text-gray-500">
-                            3 January 2026
-                        </div>
-                    </article>
-
-                    <!-- News Card -->
-                    <article>
-                        <div
-                            class="w-full h-44 bg-gray-200 rounded-md mb-4"
-                        ></div>
-
+                <!-- News Item -->
+                <article
+                    class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition"
+                >
+                    <div class="flex items-center justify-between mb-2">
                         <span
-                            class="text-xs uppercase tracking-wide text-gray-500"
+                            class="text-xs font-medium text-purple-600 uppercase"
                         >
-                            Report
+                            Technology
                         </span>
+                        <time class="text-xs text-gray-500"> 08 Jan 2026 </time>
+                    </div>
+                    <h2 class="text-lg font-semibold leading-snug mb-2">
+                        Digital Platforms to Improve Public Service Delivery
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Authorities say new digital systems will reduce
+                        processing times and increase transparency across public
+                        institutions.
+                    </p>
+                </article>
+            </section>
 
-                        <h4 class="mt-2 font-semibold text-lg leading-snug">
-                            Quarterly Progress Report Now Available
-                        </h4>
-
-                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                            The latest report outlines achievements, challenges,
-                            and next phase priorities.
-                        </p>
-
-                        <div class="mt-4 text-xs text-gray-500">
-                            28 December 2025
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Load More -->
-        <section class="max-w-7xl mx-auto px-6 py-16 text-center">
-            <button
-                class="px-8 py-3 bg-gray-900 text-white text-sm font-semibold rounded-md hover:bg-gray-950 transition"
-            >
-                Load More News
-            </button>
-        </section>
-
-        <!-- Footer -->
-        <footer class="bg-white border-t border-gray-200">
-            <div
-                class="max-w-7xl mx-auto px-6 py-6 text-sm text-gray-500 text-center"
-            >
-                © 2026 Initiative Name. All rights reserved.
-            </div>
-        </footer>
+            <!-- Footer -->
+            <footer class="mt-12 text-center text-xs text-gray-500">
+                © 2026 Official News Desk. All rights reserved.
+            </footer>
+        </div>
     </body>
 </html>
