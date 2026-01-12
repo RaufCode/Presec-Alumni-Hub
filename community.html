@@ -3,261 +3,249 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Welcome - Senior Developer</title>
+        <title>Community Hub</title>
+
+        <!-- Tailwind CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            @keyframes float {
-                0%,
-                100% {
-                    transform: translateY(0px);
-                }
-                50% {
-                    transform: translateY(-20px);
-                }
-            }
-
-            .fade-in-up {
-                animation: fadeInUp 0.8s ease-out forwards;
-            }
-
-            .float {
-                animation: float 3s ease-in-out infinite;
-            }
-
-            .delay-1 {
-                animation-delay: 0.2s;
-                opacity: 0;
-            }
-            .delay-2 {
-                animation-delay: 0.4s;
-                opacity: 0;
-            }
-            .delay-3 {
-                animation-delay: 0.6s;
-                opacity: 0;
-            }
-            .delay-4 {
-                animation-delay: 0.8s;
-                opacity: 0;
-            }
-        </style>
     </head>
-    <body
-        class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen overflow-x-hidden"
-    >
-        <!-- Animated Background Elements -->
-        <div class="fixed inset-0 overflow-hidden pointer-events-none">
+
+    <body class="bg-gray-50 text-gray-800 antialiased">
+        <!-- ================= HEADER ================= -->
+        <header class="bg-white border-b sticky top-0 z-50">
             <div
-                class="absolute top-20 left-10 w-72 h-72 bg-green-500/10 rounded-full blur-3xl float"
-            ></div>
-            <div
-                class="absolute bottom-20 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl float"
-                style="animation-delay: 1s"
-            ></div>
-            <div
-                class="absolute top-1/2 left-1/2 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl float"
-                style="animation-delay: 2s"
-            ></div>
-        </div>
-
-        <!-- Main Content -->
-        <div
-            class="relative z-10 min-h-screen flex items-center justify-center px-4 py-20"
-        >
-            <div class="max-w-5xl mx-auto text-center">
-                <!-- Profile Image -->
-                <div class="fade-in-up mb-8">
-                    <div
-                        class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-green-400 to-emerald-600 p-1 shadow-2xl shadow-green-500/20"
-                    >
-                        <div
-                            class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center text-5xl"
-                        >
-                            👨‍💻
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Main Heading -->
-                <h1
-                    class="fade-in-up delay-1 text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
-                >
-                    Welcome to My
-                    <span
-                        class="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent"
-                    >
-                        Digital Space
-                    </span>
-                </h1>
-
-                <!-- Subtitle -->
-                <p
-                    class="fade-in-up delay-2 text-xl md:text-2xl text-slate-300 mb-4 max-w-3xl mx-auto leading-relaxed"
-                >
-                    Senior Full-Stack Developer
-                </p>
-
-                <p
-                    class="fade-in-up delay-2 text-lg text-slate-400 mb-12 max-w-2xl mx-auto"
-                >
-                    Crafting scalable web applications with modern technologies
-                    and best practices. Passionate about clean code, performance
-                    optimization, and innovative solutions.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div
-                    class="fade-in-up delay-3 flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
-                >
-                    <button
-                        class="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/50 hover:scale-105"
-                    >
-                        <span class="relative z-10">View My Work</span>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        ></div>
-                    </button>
-
-                    <button
-                        class="px-8 py-4 bg-slate-800 text-white font-semibold rounded-lg border-2 border-slate-700 hover:border-green-500 transition-all duration-300 hover:bg-slate-700 hover:scale-105"
-                    >
-                        Get In Touch
-                    </button>
-                </div>
-
-                <!-- Feature Cards -->
-                <div
-                    class="fade-in-up delay-4 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
-                >
-                    <!-- Card 1 -->
-                    <div
-                        class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-2"
-                    >
-                        <div
-                            class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"
-                        >
-                            ⚡
-                        </div>
-                        <h3 class="text-xl font-semibold text-white mb-2">
-                            Fast Performance
-                        </h3>
-                        <p class="text-slate-400">
-                            Optimized for speed and efficiency with cutting-edge
-                            technologies
-                        </p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div
-                        class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-2"
-                    >
-                        <div
-                            class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"
-                        >
-                            🎨
-                        </div>
-                        <h3 class="text-xl font-semibold text-white mb-2">
-                            Modern Design
-                        </h3>
-                        <p class="text-slate-400">
-                            Beautiful, responsive interfaces that users love to
-                            interact with
-                        </p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div
-                        class="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-2"
-                    >
-                        <div
-                            class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"
-                        >
-                            🔒
-                        </div>
-                        <h3 class="text-xl font-semibold text-white mb-2">
-                            Secure & Reliable
-                        </h3>
-                        <p class="text-slate-400">
-                            Built with security best practices and robust
-                            architecture
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Tech Stack Icons -->
-                <div
-                    class="fade-in-up delay-4 mt-16 pt-8 border-t border-slate-700"
-                >
-                    <p
-                        class="text-slate-400 mb-6 text-sm uppercase tracking-wider"
-                    >
-                        Technologies I Work With
-                    </p>
-                    <div
-                        class="flex flex-wrap justify-center gap-6 items-center"
-                    >
-                        <span
-                            class="px-4 py-2 bg-slate-800/70 border border-slate-700 rounded-lg text-slate-300 hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
-                            >JavaScript</span
-                        >
-                        <span
-                            class="px-4 py-2 bg-slate-800/70 border border-slate-700 rounded-lg text-slate-300 hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
-                            >React</span
-                        >
-                        <span
-                            class="px-4 py-2 bg-slate-800/70 border border-slate-700 rounded-lg text-slate-300 hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
-                            >Vue</span
-                        >
-                        <span
-                            class="px-4 py-2 bg-slate-800/70 border border-slate-700 rounded-lg text-slate-300 hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
-                            >Node.js</span
-                        >
-                        <span
-                            class="px-4 py-2 bg-slate-800/70 border border-slate-700 rounded-lg text-slate-300 hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
-                            >TypeScript</span
-                        >
-                        <span
-                            class="px-4 py-2 bg-slate-800/70 border border-slate-700 rounded-lg text-slate-300 hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
-                            >Tailwind CSS</span
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div
-            class="fixed bottom-8 left-1/2 -translate-x-1/2 fade-in-up delay-4"
-        >
-            <div
-                class="flex flex-col items-center gap-2 text-slate-400 animate-bounce"
+                class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
             >
-                <span class="text-sm">Scroll to explore</span>
-                <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                <h1 class="text-xl font-bold text-gray-900">Community Hub</h1>
+
+                <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-gray-900 transition"
+                        >Home</a
+                    >
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-gray-900 transition"
+                        >Discussions</a
+                    >
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-gray-900 transition"
+                        >Events</a
+                    >
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-gray-900 transition"
+                        >Members</a
+                    >
+                </nav>
+
+                <button
+                    class="px-4 py-2 text-sm font-semibold bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition"
                 >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                    ></path>
-                </svg>
+                    Join Community
+                </button>
             </div>
-        </div>
+        </header>
+
+        <!-- ================= HERO ================= -->
+        <section class="bg-white">
+            <div
+                class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center"
+            >
+                <div>
+                    <h2
+                        class="text-4xl font-extrabold text-gray-900 leading-tight"
+                    >
+                        Connect. Share. Grow Together.
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-600">
+                        A welcoming space for discussion, collaboration,
+                        learning, and meaningful connections.
+                    </p>
+
+                    <div class="mt-8 flex gap-4">
+                        <button
+                            class="px-6 py-3 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition"
+                        >
+                            Get Started
+                        </button>
+                        <button
+                            class="px-6 py-3 bg-gray-100 text-gray-800 text-sm font-semibold rounded-lg hover:bg-gray-200 transition"
+                        >
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <div
+                        class="h-72 rounded-2xl bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center text-gray-500 font-medium"
+                    >
+                        Community Illustration
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STATS ================= -->
+        <section class="py-16">
+            <div
+                class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8"
+            >
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-gray-900">12k+</p>
+                    <p class="mt-1 text-sm text-gray-600">Members</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-gray-900">3.5k</p>
+                    <p class="mt-1 text-sm text-gray-600">Discussions</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-gray-900">420</p>
+                    <p class="mt-1 text-sm text-gray-600">Events</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-gray-900">98%</p>
+                    <p class="mt-1 text-sm text-gray-600">Positive Feedback</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DISCUSSIONS ================= -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900">
+                        Latest Discussions
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Join conversations happening right now in the community.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Discussion Card -->
+                    <div
+                        class="p-6 border rounded-xl hover:shadow-md transition bg-gray-50"
+                    >
+                        <h4 class="text-lg font-semibold text-gray-900">
+                            Best resources for learning modern web development
+                        </h4>
+                        <p class="mt-2 text-sm text-gray-600">
+                            Share tutorials, books, and tools that helped you
+                            grow.
+                        </p>
+                        <div
+                            class="mt-4 flex items-center justify-between text-sm text-gray-500"
+                        >
+                            <span>Posted by Alex</span>
+                            <span>24 replies</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="p-6 border rounded-xl hover:shadow-md transition bg-gray-50"
+                    >
+                        <h4 class="text-lg font-semibold text-gray-900">
+                            How do you stay consistent with learning?
+                        </h4>
+                        <p class="mt-2 text-sm text-gray-600">
+                            Tips, routines, and habits that actually work.
+                        </p>
+                        <div
+                            class="mt-4 flex items-center justify-between text-sm text-gray-500"
+                        >
+                            <span>Posted by Mariam</span>
+                            <span>18 replies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EVENTS ================= -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900">
+                        Upcoming Events
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Learn, network, and collaborate in real time.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white border rounded-xl p-6 hover:shadow-lg transition"
+                    >
+                        <p class="text-sm text-gray-500">Feb 12, 2026</p>
+                        <h4 class="mt-2 font-semibold text-gray-900">
+                            Community Town Hall
+                        </h4>
+                        <p class="mt-2 text-sm text-gray-600">
+                            Open discussion on future plans and improvements.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white border rounded-xl p-6 hover:shadow-lg transition"
+                    >
+                        <p class="text-sm text-gray-500">Mar 05, 2026</p>
+                        <h4 class="mt-2 font-semibold text-gray-900">
+                            Web Dev Workshop
+                        </h4>
+                        <p class="mt-2 text-sm text-gray-600">
+                            Hands-on session with modern frontend tools.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white border rounded-xl p-6 hover:shadow-lg transition"
+                    >
+                        <p class="text-sm text-gray-500">Mar 28, 2026</p>
+                        <h4 class="mt-2 font-semibold text-gray-900">
+                            Networking Meetup
+                        </h4>
+                        <p class="mt-2 text-sm text-gray-600">
+                            Meet fellow members and build connections.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="bg-gray-900 text-white py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h3 class="text-3xl font-bold">
+                    Be Part of Something Meaningful
+                </h3>
+                <p class="mt-4 text-gray-300">
+                    Join the community today and start contributing, learning,
+                    and growing with others.
+                </p>
+                <button
+                    class="mt-8 px-8 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition"
+                >
+                    Join Now
+                </button>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="bg-white border-t">
+            <div
+                class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600"
+            >
+                <p>© 2026 Community Hub. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="hover:text-gray-900">Privacy</a>
+                    <a href="#" class="hover:text-gray-900">Terms</a>
+                    <a href="#" class="hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
